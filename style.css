@@ -1,0 +1,29 @@
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004080 !important;
+  transform: translateY(-2px);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar-brand {
+  padding: 0; 
+}
+
+.navbar-brand .logo-nav {
+  height: 50px;       /* ajusta a altura da logo */
+  width: auto;        /* mantém proporção */
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
